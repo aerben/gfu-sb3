@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/spring-boot/autoconfiguration/demo/demo-finished/autoconfiguration" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/spring-boot/demo/finished/autoconfiguration/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/demo/autoconfiguration/finished/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/demo/autoconfiguration/assignment/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/demo/autoconfiguration/assignment-finished/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/demo/autoconfiguration/assignment-start/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/demo/demo-start/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/demo/demo-finished/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/assignment/assignment-start/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/assignment/assignment-finished/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/autoconfiguration/assignment/assignment-finished/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/autoconfiguration/assignment/assignment-start/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/autoconfiguration/demo/demo-finished/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/testing/demo/demo-finished/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/autoconfiguration/demo/demo-start/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/autoconfiguration/demo/demo-finished-host/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/spring-boot/autoconfiguration/demo/demo-finished-host/pom.xml" />
+      </set>
+    </option>
+    <option name="workspaceImportForciblyTurnedOn" value="true" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" project-jdk-name="temurin-21" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
