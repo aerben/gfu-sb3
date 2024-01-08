@@ -7,10 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-autoconfiguration-assignment-start" />
-        <module name="spring-boot-autoconfiguration-assignment-finished" />
         <module name="spring-boot-autoconfiguration-finished" />
-        <module name="spring-boot-testing-finished" />
+        <module name="spring-boot-autoconfiguration-assignment-finished" />
         <module name="spring-boot-autoconfiguration-start" />
+        <module name="spring-boot-testing-demo-finished" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -20,12 +20,13 @@
       <module name="spring-boot-autoconfiguration-finished.main" target="21" />
       <module name="spring-boot-autoconfiguration-finished.test" target="21" />
       <module name="spring-boot-autoconfiguration-host" target="21" />
+      <module name="spring-boot-testing-finished" target="21" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="spring-boot-autoconfiguration-finished (2)" options="" />
-      <module name="spring-boot-testing-finished" options="-parameters" />
+      <module name="spring-boot-testing-finished" options="" />
     </option>
   </component>
 </project>

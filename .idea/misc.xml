@@ -22,6 +22,10 @@
         <option value="$PROJECT_DIR$/spring-boot/testing/demo/demo-finished/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/autoconfiguration/demo/demo-start/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/autoconfiguration/demo/demo-finished-host/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/autoconfiguration/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/testing/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
