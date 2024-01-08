@@ -10,14 +10,14 @@
         <version>1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>spring-boot</artifactId>
+    <artifactId>gfu-spring-boot</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>Spring Boot Trainings</name>
 
     <modules>
         <module>autoconfiguration</module>
         <module>testing</module>
+        <module>starter</module>
     </modules>
 
     <build>
