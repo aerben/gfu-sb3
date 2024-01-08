@@ -17,8 +17,9 @@
     <modules>
         <module>assignment/assignment-finished</module>
         <module>assignment/assignment-start</module>
-        <module>demo/demo-finished</module>
-        <module>demo/demo-start</module>
+        <module>demo/demo-autoconfigure-starter</module>
+        <module>demo/demo-autoconfigure-model</module>
+        <module>demo/demo-autoconfigure-app</module>
     </modules>
 
     <build>

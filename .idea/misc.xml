@@ -26,11 +26,21 @@
         <option value="$PROJECT_DIR$/spring-boot/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/testing/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/starter/demo/demo-finished-hostapp/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/starter/demo/greeter-spring-boot-autoconfigure/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/starter/demo/demo-autoconfigure/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/starter/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/starter/demo/greeter-spring-boot-sample-app/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/starter/demo/demo-autoconfigure-model/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/starter/demo/demo-autoconfigure-starter/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/spring-boot/autoconfiguration/demo/demo-finished-host/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/starter/demo/demo-finished-hostapp/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/starter/demo/demo-finished-startermodule/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/starter/demo/demo-start/pom.xml" />
       </set>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />
