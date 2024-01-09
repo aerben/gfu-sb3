@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$" />
     <file type="web" url="file://$PROJECT_DIR$/spring-boot/autoconfiguration/demo/demo-finished/autoconfiguration" />
   </component>
   <component name="MavenProjectsManager">
@@ -33,6 +34,8 @@
         <option value="$PROJECT_DIR$/spring-boot/starter/demo/greeter-spring-boot-sample-app/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/starter/demo/demo-autoconfigure-model/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/starter/demo/demo-autoconfigure-starter/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/testing/demo/demo-start/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/testing/assignment/assignment-start/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -45,7 +48,7 @@
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" project-jdk-name="temurin-21" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="temurin-21" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
