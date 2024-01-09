@@ -13,7 +13,7 @@ Erstelle ein neues Maven-Projekt mit folgender `pom.xml`:
     <packaging>jar</packaging>
 
     <parent>
-        <groupId>io.erben</groupId>
+        <groupId>digital.erben</groupId>
         <artifactId>gfu-spring-boot-starter</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../../pom.xml</relativePath>
@@ -160,7 +160,7 @@ Erstelle ein neues Maven-Projekt mit folgender `pom.xml`:
     <packaging>jar</packaging>
 
     <parent>
-        <groupId>io.erben</groupId>
+        <groupId>digital.erben</groupId>
         <artifactId>gfu-spring-boot-starter</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../../pom.xml</relativePath>
@@ -173,7 +173,7 @@ Erstelle ein neues Maven-Projekt mit folgender `pom.xml`:
             <version>${spring-boot.version}</version>
         </dependency>
         <dependency>
-            <groupId>io.erben</groupId>
+            <groupId>digital.erben</groupId>
             <artifactId>gfu-spring-boot-starter-assignment-finished-module</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>

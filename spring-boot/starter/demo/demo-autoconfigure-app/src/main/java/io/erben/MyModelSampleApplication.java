@@ -1,4 +1,4 @@
-package io.erben;
+package digital.erben;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

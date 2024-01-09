@@ -1,8 +1,8 @@
-package io.erben.greeter.autoconfigure;
+package digital.erben.greeter.autoconfigure;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-@ConfigurationProperties(prefix = "io.erben.mymodel")
+@ConfigurationProperties(prefix = "digital.erben.mymodel")
 public class MyModelProperties {
 
     private String firstName;

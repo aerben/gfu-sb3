@@ -1,4 +1,4 @@
-package io.erben.springboot;
+package digital.erben.springboot;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +12,7 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @DataJpaTest
-@EntityScan("io.erben.springboot")
+@EntityScan("digital.erben.springboot")
 public class UserServiceTest {
 
     @Autowired

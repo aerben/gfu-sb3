@@ -1,4 +1,4 @@
-package io.erben;
+package digital.erben;
 
 
 import java.util.Objects;

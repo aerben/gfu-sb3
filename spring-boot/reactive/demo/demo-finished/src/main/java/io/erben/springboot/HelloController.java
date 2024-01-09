@@ -1,4 +1,4 @@
-package io.erben.springboot;
+package digital.erben.springboot;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

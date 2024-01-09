@@ -4,7 +4,7 @@
     <version>0.0.1-SNAPSHOT</version>
 
     <parent>
-        <groupId>io.erben</groupId>
+        <groupId>digital.erben</groupId>
         <artifactId>gfu-spring-boot-reactive</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../../pom.xml</relativePath>

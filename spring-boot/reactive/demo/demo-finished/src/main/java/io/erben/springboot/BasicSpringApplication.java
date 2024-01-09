@@ -1,4 +1,4 @@
-package io.erben.springboot;
+package digital.erben.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

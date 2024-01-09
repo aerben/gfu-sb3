@@ -1,4 +1,4 @@
-package io.erben.springboot;
+package digital.erben.springboot;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

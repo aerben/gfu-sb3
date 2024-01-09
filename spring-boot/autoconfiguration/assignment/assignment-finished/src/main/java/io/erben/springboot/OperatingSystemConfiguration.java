@@ -1,4 +1,4 @@
-package io.erben.springboot;
+package digital.erben.springboot;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Conditional;

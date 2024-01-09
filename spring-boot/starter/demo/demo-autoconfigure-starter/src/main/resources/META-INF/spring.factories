@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-io.erben.greeter.autoconfigure.MyModelAutoConfiguration
+digital.erben.greeter.autoconfigure.MyModelAutoConfiguration

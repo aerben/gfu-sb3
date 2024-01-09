@@ -1,4 +1,4 @@
-package io.erben.springboot;
+package digital.erben.springboot;
 
 import java.io.BufferedReader;
 import java.io.IOException;

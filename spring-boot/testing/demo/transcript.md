@@ -21,7 +21,7 @@ public class ApplicationContextTest {
     @Autowired
     HelloService helloService;
 
-    @Value("${io.erben.springboot.testing.helloService.message}")
+    @Value("${digital.erben.springboot.testing.helloService.message}")
     String message;
 
     @Test
@@ -244,7 +244,7 @@ Füge diese Deps hinzu:
 Implementiere und erläutere diesen Test:
 ```java
 @DataJpaTest
-@EntityScan("io.erben.springboot.testing")
+@EntityScan("digital.erben.springboot.testing")
 public class UserServiceTest {
 
     @Autowired

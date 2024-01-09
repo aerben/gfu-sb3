@@ -1,4 +1,4 @@
-package io.erben.springboot;
+package digital.erben.springboot;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;

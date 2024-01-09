@@ -1,6 +1,6 @@
-package io.erben.greeter.autoconfigure;
+package digital.erben.greeter.autoconfigure;
 
-import io.erben.MyModel;
+import digital.erben.MyModel;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;

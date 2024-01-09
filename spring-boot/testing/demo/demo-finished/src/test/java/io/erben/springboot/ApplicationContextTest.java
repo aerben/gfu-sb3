@@ -1,4 +1,4 @@
-package io.erben.springboot;
+package digital.erben.springboot;
 
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -19,7 +19,7 @@ public class ApplicationContextTest {
     @Autowired
     HelloService helloService;
 
-    @Value("${io.erben.springboot.testing.helloService.message}")
+    @Value("${digital.erben.springboot.testing.helloService.message}")
     String message;
 
     @Autowired
