@@ -1,4 +1,4 @@
-package digital.erben.greeter.autoconfigure;
+package digital.erben.mymodel.autoconfigure;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

@@ -1,4 +1,4 @@
-package digital.erben.greeter.autoconfigure;
+package digital.erben.mymodel.autoconfigure;
 
 import digital.erben.MyModel;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;

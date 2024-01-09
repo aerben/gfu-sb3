@@ -13,4 +13,12 @@
         <module>spring-boot</module>
     </modules>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/octocat/hello-world</url>
+        </repository>
+    </distributionManagement>
+
 </project>
