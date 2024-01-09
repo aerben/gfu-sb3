@@ -17,6 +17,7 @@
         <module>demo/demo-finished</module>
         <module>demo/demo-start</module>
         <module>assignment/assignment-finished</module>
+        <module>assignment/assignment-start</module>
     </modules>
 
     <build>

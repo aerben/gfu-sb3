@@ -6,9 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="gfu-spring-boot-starter-assignment-start" />
         <module name="gfu-spring-boot-autoconfiguration-assignment-finished" />
         <module name="spring-boot-testing-demo-finished" />
+        <module name="gfu-spring-boot-starter-assignment-finished-app" />
         <module name="spring-boot-autoconfiguration-assignment-start" />
         <module name="gfu-spring-boot-autoconfiguration-demo-finished" />
         <module name="gfu-spring-boot-starter-demo-app" />
@@ -17,21 +17,25 @@
         <module name="spring-boot-starter-assignment-finished" />
         <module name="gfu-spring-boot-autoconfiguration-assignment-start" />
         <module name="gfu-spring-boot-starter-demo-autoconfigure-starter" />
-        <module name="gfu-spring-boot-starter-assignment-finished" />
         <module name="gfu-spring-boot-testing-demo-start" />
         <module name="gfu-spring-boot-testing-demo-finished" />
         <module name="gfu-spring-boot-testing-assignment-finished" />
         <module name="gfu-spring-boot-starter-demo-autoconfigure-starter (1)" />
         <module name="spring-boot-autoconfiguration-assignment-finished" />
+        <module name="gfu-spring-boot-testing-assignment-start" />
         <module name="spring-boot-autoconfiguration-start" />
         <module name="spring-boot-starter-assignment-start" />
+        <module name="gfu-spring-boot-starter-assignment-finished-module" />
         <module name="gfu-spring-boot-autoconfiguration-demo-start" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="gfu-spring-boot-reactive" target="21" />
+      <module name="gfu-spring-boot-starter-assignment-finished" target="21" />
+      <module name="gfu-spring-boot-starter-assignment-start" target="1.8" />
       <module name="gfu-spring-boot-starter-demo-finished" target="21" />
       <module name="gfu-spring-boot-starter-demo-finished-startermodule" target="21" />
-      <module name="gfu-spring-boot-testing-assignment-start" target="21" />
+      <module name="gfu-spring-boot-testing-assignment-finished (1)" target="21" />
       <module name="gfu-spring-boot-testing-demo-finished (1)" target="21" />
       <module name="gfu-spring-boot-testing-demo-start (1)" target="21" />
       <module name="greeter-spring-boot-autoconfigure" target="1.5" />
