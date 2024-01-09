@@ -38,6 +38,7 @@
         <option value="$PROJECT_DIR$/spring-boot/testing/assignment/assignment-start/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/starter/assignment/assignment-start/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/starter/assignment/assignment-finished-app/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/reactive/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

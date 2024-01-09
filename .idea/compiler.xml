@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -15,6 +16,7 @@
         <module name="gfu-spring-boot-starter-demo-autoconfigure-model" />
         <module name="spring-boot-autoconfiguration-finished" />
         <module name="spring-boot-starter-assignment-finished" />
+        <module name="gfu-spring-boot-reactive-demo-finished" />
         <module name="gfu-spring-boot-autoconfiguration-assignment-start" />
         <module name="gfu-spring-boot-starter-demo-autoconfigure-starter" />
         <module name="gfu-spring-boot-testing-demo-start" />
@@ -30,7 +32,6 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="gfu-spring-boot-reactive" target="21" />
       <module name="gfu-spring-boot-starter-assignment-finished" target="21" />
       <module name="gfu-spring-boot-starter-assignment-start" target="1.8" />
       <module name="gfu-spring-boot-starter-demo-finished" target="21" />

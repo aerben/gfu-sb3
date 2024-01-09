@@ -9,13 +9,13 @@ Erstelle ein neues Maven-Projekt mit folgender `pom.xml`:
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>gfu-spring-boot-starter-assignment-finished-module</artifactId>
+    <artifactId>gfu-sb3-starter-task-finished-module</artifactId>
     <packaging>jar</packaging>
 
     <parent>
         <groupId>digital.erben</groupId>
-        <artifactId>gfu-spring-boot-starter</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <artifactId>gfu-sb3-starter</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
@@ -127,12 +127,12 @@ public class CustomService {
 Erstelle eine Datei namens `spring.factories` im Verzeichnis `src/main/resources/META-INF` und füge folgende Zeile hinzu:
 
 ```
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.example.CustomServiceAutoConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=erben.digital.CustomServiceAutoConfiguration
 ```
 
 Außerdem benötigst du seit Spring Boot 3 noch folgende Datei: `src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports` mit dem Inhalt
 ```
-com.example.CustomServiceAutoConfiguration
+erben.digital.CustomServiceAutoConfiguration
 ```
 
 ## Schritt 6: Maven-Paket erstellen
@@ -156,13 +156,13 @@ Erstelle ein neues Maven-Projekt mit folgender `pom.xml`:
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>gfu-spring-boot-starter-assignment-finished-app</artifactId>
+    <artifactId>gfu-sb3-starter-task-finished-app</artifactId>
     <packaging>jar</packaging>
 
     <parent>
         <groupId>digital.erben</groupId>
-        <artifactId>gfu-spring-boot-starter</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <artifactId>gfu-sb3-starter</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
@@ -174,8 +174,8 @@ Erstelle ein neues Maven-Projekt mit folgender `pom.xml`:
         </dependency>
         <dependency>
             <groupId>digital.erben</groupId>
-            <artifactId>gfu-spring-boot-starter-assignment-finished-module</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <artifactId>gfu-sb3-starter-task-finished-module</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
@@ -212,7 +212,7 @@ Erstelle eine neue Java-Klasse `CustomStarterDemoApplication.java` im Verzeichni
 ```java
 package com.example.demo;
 
-import com.example.CustomService;
+import erben.digital.CustomService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

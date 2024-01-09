@@ -5,30 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>digital.erben</groupId>
-        <artifactId>gfu-spring-boot</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <artifactId>gfu-sb3</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>gfu-spring-boot-reactive</artifactId>
+    <artifactId>gfu-sb3-reactive</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>demo/demo-finished</module>
+        <module>demo/finished</module>
+        <module>task/start</module>
     </modules>
-
-    <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <configuration>
-                        <source>21</source>
-                        <target>21</target>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </pluginManagement>
-    </build>
 </project>

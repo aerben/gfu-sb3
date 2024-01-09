@@ -6,17 +6,17 @@
 
     <parent>
         <groupId>digital.erben</groupId>
-        <artifactId>gfu-spring-boot</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <artifactId>gfu-sb3</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>gfu-spring-boot-starter</artifactId>
+    <artifactId>gfu-sb3-starter</artifactId>
     <packaging>pom</packaging>
 
     <modules>
-        <module>assignment/assignment-finished-module</module>
-        <module>assignment/assignment-finished-app</module>
+        <module>task/finished-module</module>
+        <module>task/finished-app</module>
         <module>demo/demo-autoconfigure-starter</module>
         <module>demo/demo-autoconfigure-model</module>
         <module>demo/demo-autoconfigure-app</module>

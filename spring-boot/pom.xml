@@ -7,15 +7,15 @@
     <parent>
         <groupId>digital.erben</groupId>
         <artifactId>gfu-parent</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>gfu-spring-boot</artifactId>
+    <artifactId>gfu-sb3</artifactId>
     <packaging>pom</packaging>
 
     <properties>
-        <spring-boot.version>3.2.0</spring-boot.version>
+        <spring-boot.version>3.2.1</spring-boot.version>
         <maven-compiler-plugin.version>3.12.1</maven-compiler-plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>21</maven.compiler.source>
@@ -26,6 +26,7 @@
         <module>autoconfiguration</module>
         <module>testing</module>
         <module>starter</module>
+        <module>reactive</module>
     </modules>
 
     <build>
