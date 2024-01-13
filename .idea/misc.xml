@@ -3,7 +3,7 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$" />
-    <file type="web" url="file://$PROJECT_DIR$/spring-boot/autoconfiguration/demo/demo-finished/autoconfiguration" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-boot/autoconfiguration/demo/finished/autoconfiguration" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -39,11 +39,15 @@
         <option value="$PROJECT_DIR$/spring-boot/starter/assignment/assignment-start/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/starter/assignment/assignment-finished-app/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/reactive/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/reactive/assignment/assignment-start/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/jta/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/data-redis/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/spring-boot/autoconfiguration/demo/demo-finished-host/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/jta/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/starter/demo/demo-finished-hostapp/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/starter/demo/demo-finished-startermodule/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/starter/demo/demo-start/pom.xml" />

@@ -3,4 +3,4 @@ Erstelle weitere Tests für den Web-Layer in `PersonControllerTest`. Teste die v
 
 # Aufgabe 2: Reactive DB-Test
 
-Erstelle weitere Tests für den Repository-Layer in `PersonRepositoryTest`. Teste die verbleibenden Repository-Methoden.
+Erstelle weitere Tests für den Repository-Layer in `digital.erben.PersonRepositoryTest`. Teste die verbleibenden Repository-Methoden.

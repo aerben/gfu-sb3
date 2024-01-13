@@ -7,37 +7,56 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="gfu-spring-boot-autoconfiguration-assignment-finished" />
+        <module name="gfu-sb3-data-demo-finished" />
         <module name="spring-boot-testing-demo-finished" />
-        <module name="gfu-spring-boot-starter-assignment-finished-app" />
         <module name="spring-boot-autoconfiguration-assignment-start" />
-        <module name="gfu-spring-boot-autoconfiguration-demo-finished" />
-        <module name="gfu-spring-boot-starter-demo-app" />
+        <module name="gfu-sb3-testing-task-start" />
         <module name="gfu-spring-boot-starter-demo-autoconfigure-model" />
         <module name="spring-boot-autoconfiguration-finished" />
         <module name="spring-boot-starter-assignment-finished" />
-        <module name="gfu-spring-boot-reactive-demo-finished" />
-        <module name="gfu-spring-boot-autoconfiguration-assignment-start" />
+        <module name="gfu-sb3-autoconfiguration-task-finished" />
+        <module name="gfu-sb3-autoconfiguration-demo-finished" />
         <module name="gfu-spring-boot-starter-demo-autoconfigure-starter" />
-        <module name="gfu-spring-boot-testing-demo-start" />
-        <module name="gfu-spring-boot-testing-demo-finished" />
-        <module name="gfu-spring-boot-testing-assignment-finished" />
         <module name="gfu-spring-boot-starter-demo-autoconfigure-starter (1)" />
+        <module name="gfu-sb3-testing-task-finished" />
+        <module name="gfu-sb3-testing-demo-finished" />
         <module name="spring-boot-autoconfiguration-assignment-finished" />
-        <module name="gfu-spring-boot-testing-assignment-start" />
         <module name="spring-boot-autoconfiguration-start" />
+        <module name="gfu-sb3-testing-demo-start" />
+        <module name="gfu-sb3-autoconfiguration-demo-start" />
+        <module name="gfu-sb3-starter-task-finished-app" />
+        <module name="gfu-sb3-starter-task-finished-module" />
+        <module name="gfu-spring-boot-starter-demo-app" />
+        <module name="gfu-sb3-reactive-task-start" />
+        <module name="gfu-sb3-reactive-demo-finished" />
+        <module name="gfu-sb3-autoconfiguration-task-start" />
+        <module name="gfu-sb3-data-demo-finished (1)" />
         <module name="spring-boot-starter-assignment-start" />
-        <module name="gfu-spring-boot-starter-assignment-finished-module" />
-        <module name="gfu-spring-boot-autoconfiguration-demo-start" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="gfu-sb3-jta" target="21" />
+      <module name="gfu-sb3-jta (1)" target="21" />
+      <module name="gfu-sb3-jta-demo-finished" target="21" />
+      <module name="gfu-sb3-jta-demo-finished (1)" target="21" />
+      <module name="gfu-spring-boot-autoconfiguration-assignment-finished" target="21" />
+      <module name="gfu-spring-boot-autoconfiguration-assignment-start" target="21" />
+      <module name="gfu-spring-boot-autoconfiguration-demo-finished" target="21" />
+      <module name="gfu-spring-boot-autoconfiguration-demo-start" target="21" />
+      <module name="gfu-spring-boot-reactive-demo-finished" target="21" />
+      <module name="gfu-spring-boot-reactive-demo-finished (1)" target="21" />
       <module name="gfu-spring-boot-starter-assignment-finished" target="21" />
+      <module name="gfu-spring-boot-starter-assignment-finished-app" target="21" />
+      <module name="gfu-spring-boot-starter-assignment-finished-module" target="21" />
       <module name="gfu-spring-boot-starter-assignment-start" target="1.8" />
       <module name="gfu-spring-boot-starter-demo-finished" target="21" />
       <module name="gfu-spring-boot-starter-demo-finished-startermodule" target="21" />
+      <module name="gfu-spring-boot-testing-assignment-finished" target="21" />
       <module name="gfu-spring-boot-testing-assignment-finished (1)" target="21" />
+      <module name="gfu-spring-boot-testing-assignment-start" target="21" />
+      <module name="gfu-spring-boot-testing-demo-finished" target="21" />
       <module name="gfu-spring-boot-testing-demo-finished (1)" target="21" />
+      <module name="gfu-spring-boot-testing-demo-start" target="21" />
       <module name="gfu-spring-boot-testing-demo-start (1)" target="21" />
       <module name="greeter-spring-boot-autoconfigure" target="1.5" />
       <module name="greeter-spring-boot-sample-app" target="1.5" />
@@ -57,6 +76,8 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="gfu-sb3-data-demo-finished" options="-parameters" />
+      <module name="gfu-sb3-data-demo-finished (1)" options="-parameters" />
       <module name="spring-boot-autoconfiguration-finished (2)" options="" />
       <module name="spring-boot-testing-finished" options="" />
     </option>

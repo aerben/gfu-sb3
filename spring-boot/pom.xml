@@ -27,6 +27,8 @@
         <module>testing</module>
         <module>starter</module>
         <module>reactive</module>
+        <module>data-mongodb</module>
+        <module>data-redis</module>
     </modules>
 
     <build>
