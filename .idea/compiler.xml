@@ -23,6 +23,7 @@
         <module name="spring-boot-autoconfiguration-assignment-finished" />
         <module name="spring-boot-autoconfiguration-start" />
         <module name="gfu-sb3-testing-demo-start" />
+        <module name="gfu-sb3-data-mongodb-task-finished" />
         <module name="gfu-sb3-autoconfiguration-demo-start" />
         <module name="gfu-sb3-starter-task-finished-app" />
         <module name="gfu-sb3-starter-task-finished-module" />
@@ -31,6 +32,7 @@
         <module name="gfu-sb3-reactive-demo-finished" />
         <module name="gfu-sb3-autoconfiguration-task-start" />
         <module name="gfu-sb3-data-demo-finished (1)" />
+        <module name="gfu-sb3-data-mongodb-task-start" />
         <module name="spring-boot-starter-assignment-start" />
       </profile>
     </annotationProcessing>
@@ -78,6 +80,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="gfu-sb3-data-demo-finished" options="-parameters" />
       <module name="gfu-sb3-data-demo-finished (1)" options="-parameters" />
+      <module name="gfu-sb3-data-mongodb-task-finished" options="-parameters" />
+      <module name="gfu-sb3-data-mongodb-task-start" options="-parameters" />
       <module name="spring-boot-autoconfiguration-finished (2)" options="" />
       <module name="spring-boot-testing-finished" options="" />
     </option>

@@ -14,5 +14,7 @@
 
     <modules>
         <module>demo/finished</module>
+        <module>task/finished</module>
+        <module>task/start</module>
     </modules>
 </project>
