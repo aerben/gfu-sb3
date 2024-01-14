@@ -17,6 +17,7 @@
         <module name="spring-boot-starter-assignment-finished" />
         <module name="gfu-sb3-autoconfiguration-task-finished" />
         <module name="gfu-sb3-autoconfiguration-demo-finished" />
+        <module name="gfu-java21-completablefuture-demo-finished" />
         <module name="gfu-spring-boot-starter-demo-autoconfigure-starter" />
         <module name="gfu-spring-boot-starter-demo-autoconfigure-starter (1)" />
         <module name="gfu-sb3-testing-task-finished" />

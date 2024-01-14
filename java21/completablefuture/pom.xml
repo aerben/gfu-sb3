@@ -6,12 +6,12 @@
 
     <parent>
         <groupId>digital.erben</groupId>
-        <artifactId>gfu-parent</artifactId>
+        <artifactId>gfu-java21</artifactId>
         <version>1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>gfu-java21</artifactId>
+    <artifactId>gfu-java21-completablefuture</artifactId>
     <packaging>pom</packaging>
 
     <properties>
@@ -23,8 +23,7 @@
     </properties>
 
     <modules>
-        <module>streams</module>
-        <module>completablefuture</module>
+        <module>demo/finished</module>
     </modules>
 
     <build>
