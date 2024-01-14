@@ -1,8 +1,9 @@
 package digital.erben;
 
-import digital.erben.model.MovieResult;
-import digital.erben.movies.MovieRating;
-import digital.erben.movies.MovieRatingsDataset;
+import digital.erben.movies.details.MovieDetailsApi;
+import digital.erben.movies.details.model.MovieResult;
+import digital.erben.movies.ratings.MovieRating;
+import digital.erben.movies.ratings.MovieRatingsDataset;
 import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;

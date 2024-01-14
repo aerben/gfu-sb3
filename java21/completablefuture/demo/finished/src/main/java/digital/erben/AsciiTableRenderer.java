@@ -2,8 +2,8 @@ package digital.erben;
 
 import de.vandermeer.asciitable.AsciiTable;
 import de.vandermeer.asciitable.CWC_LongestLine;
-import digital.erben.model.MovieResult;
-import digital.erben.model.ReleaseDate;
+import digital.erben.movies.details.model.MovieResult;
+import digital.erben.movies.details.model.ReleaseDate;
 import java.util.List;
 
 public class AsciiTableRenderer {

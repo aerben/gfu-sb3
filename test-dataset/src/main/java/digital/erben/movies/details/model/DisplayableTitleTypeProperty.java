@@ -1,3 +1,3 @@
-package digital.erben.model;
+package digital.erben.movies.details.model;
 
 public record DisplayableTitleTypeProperty(Markdown value) {}

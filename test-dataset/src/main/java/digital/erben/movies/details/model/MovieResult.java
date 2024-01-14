@@ -1,4 +1,4 @@
-package digital.erben.model;
+package digital.erben.movies.details.model;
 
 public record MovieResult(
     PrimaryImage primaryImage,

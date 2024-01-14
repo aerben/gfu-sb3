@@ -1,4 +1,4 @@
-package digital.erben.movies;
+package digital.erben.movies.ratings;
 
 import java.io.IOException;
 import java.io.InputStream;

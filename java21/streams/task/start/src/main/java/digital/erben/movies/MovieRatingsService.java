@@ -1,5 +1,7 @@
 package digital.erben.movies;
 
+import digital.erben.movies.ratings.MovieRating;
+import digital.erben.movies.ratings.MovieRatingsDataset;
 import java.time.Duration;
 import java.util.Optional;
 import java.util.Set;

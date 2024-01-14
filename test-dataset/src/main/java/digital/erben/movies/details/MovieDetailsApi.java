@@ -1,20 +1,21 @@
-package digital.erben;
-
-import static com.fasterxml.jackson.annotation.JsonSetter.Value.forValueNulls;
-import static com.fasterxml.jackson.annotation.Nulls.AS_EMPTY;
-import static com.fasterxml.jackson.databind.DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES;
-import static java.net.http.HttpRequest.BodyPublishers.noBody;
+package digital.erben.movies.details;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import digital.erben.model.ApiResponse;
-import digital.erben.model.MovieResult;
+import digital.erben.movies.details.model.ApiResponse;
+import digital.erben.movies.details.model.MovieResult;
+
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
+
+import static com.fasterxml.jackson.annotation.JsonSetter.Value.forValueNulls;
+import static com.fasterxml.jackson.annotation.Nulls.AS_EMPTY;
+import static com.fasterxml.jackson.databind.DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES;
+import static java.net.http.HttpRequest.BodyPublishers.noBody;
 
 public class MovieDetailsApi {
 
@@ -27,8 +28,7 @@ public class MovieDetailsApi {
     public static final String TITLES_API_BASE_URL =
         "https://moviesdatabase.p.rapidapi.com/titles/search/title/";
 
-    public static final String RAPID_API_KEY =
-        "1945f5b9ddmsh7107d4a97e16872p1b1b9ejsnd8413c423fad";
+    public static final String RAPID_API_KEY = System.getenv("RAPID_API_KEY");
     public static final String RAPID_API_HOST = "moviesdatabase.p.rapidapi.com";
     private final ObjectMapper om;
 
