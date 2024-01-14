@@ -1,6 +1,14 @@
 package digital.erben;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.mockito.ArgumentMatchers.eq;
+import static org.mockito.Mockito.*;
+
 import com.github.javafaker.Faker;
+import java.util.Date;
+import java.util.Optional;
+import java.util.UUID;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -9,15 +17,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
 import org.testcontainers.junit.jupiter.Testcontainers;
-
-import java.util.Date;
-import java.util.Optional;
-import java.util.UUID;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.mockito.ArgumentMatchers.eq;
-import static org.mockito.Mockito.*;
 
 @SpringBootTest
 @Testcontainers
@@ -55,7 +54,8 @@ public class CachingTest {
         Person updated = person.withLastname(faker.name().lastName());
         personService.save(updated);
         when(personRepository.save(Mockito.any())).thenReturn(person);
-        when(personRepository.findById(eq(updated.id()))).thenReturn(Optional.of(updated));
+        when(personRepository.findById(eq(updated.id())))
+            .thenReturn(Optional.of(updated));
         cacheMiss = personService.findById(updated.id());
         cacheHit = personService.findById(updated.id());
         assertTrue(cacheMiss.isPresent());
@@ -63,10 +63,6 @@ public class CachingTest {
         assertEquals(updated.firstname(), cacheMiss.get().firstname());
         assertEquals(updated.firstname(), cacheHit.get().firstname());
         verify(personRepository, times(1)).findById(updated.id());
-
-
-
-
     }
 
     private Person randomPersonWithId(String id) {

@@ -12,5 +12,4 @@ public class InjectMockExampleService {
     public String callMockMeBean() {
         return mockMeBean.mockMe();
     }
-
 }

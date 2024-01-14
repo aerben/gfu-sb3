@@ -19,7 +19,6 @@ public class PersonController {
         return personRepository.findAll();
     }
 
-
     @PostMapping
     public Mono<Person> createPerson(@RequestBody Person person) {
         return personRepository.save(person);
@@ -32,13 +31,16 @@ public class PersonController {
 
     @PutMapping("/{id}")
     public Mono<Person> updatePerson(@PathVariable Long id, @RequestBody Person person) {
-        return personRepository.findById(id)
-                .flatMap(existingPerson -> {
-                    existingPerson.setFirstName(person.getFirstName());
-                    existingPerson.setLastName(person.getLastName());
-                    return personRepository.save(existingPerson);
-                })
-                .switchIfEmpty(Mono.error(new IllegalArgumentException("Invalid person id: " + id)));
+        return personRepository
+            .findById(id)
+            .flatMap(existingPerson -> {
+                existingPerson.setFirstName(person.getFirstName());
+                existingPerson.setLastName(person.getLastName());
+                return personRepository.save(existingPerson);
+            })
+            .switchIfEmpty(
+                Mono.error(new IllegalArgumentException("Invalid person id: " + id))
+            );
     }
 
     @DeleteMapping("/{id}")

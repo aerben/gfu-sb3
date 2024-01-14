@@ -25,8 +25,6 @@ public class MyModelAutoConfiguration {
             properties.getFirstName(),
             properties.getLastName(),
             properties.getAge()
-
         );
     }
-
 }

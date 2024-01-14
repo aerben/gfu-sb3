@@ -7,6 +7,4 @@ import org.springframework.data.redis.repository.configuration.EnableRedisReposi
 @Configuration
 @EnableMongoRepositories
 @EnableRedisRepositories
-public class DataConfiguration {
-
-}
+public class DataConfiguration {}

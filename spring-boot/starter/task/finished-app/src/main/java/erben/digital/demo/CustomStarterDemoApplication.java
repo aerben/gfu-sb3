@@ -8,18 +8,18 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class CustomStarterDemoApplication implements CommandLineRunner {
 
-  private final CustomService customService;
+    private final CustomService customService;
 
-  public CustomStarterDemoApplication(CustomService customService) {
-    this.customService = customService;
-  }
+    public CustomStarterDemoApplication(CustomService customService) {
+        this.customService = customService;
+    }
 
-  public static void main(String[] args) {
-    SpringApplication.run(CustomStarterDemoApplication.class, args);
-  }
+    public static void main(String[] args) {
+        SpringApplication.run(CustomStarterDemoApplication.class, args);
+    }
 
-  @Override
-  public void run(String... args) {
-    customService.printMessage();
-  }
+    @Override
+    public void run(String... args) {
+        customService.printMessage();
+    }
 }

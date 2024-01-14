@@ -13,5 +13,4 @@ public class CustomServiceAutoConfiguration {
     public CustomService customService(CustomServiceProperties properties) {
         return new CustomService(properties.getMessage());
     }
-
 }

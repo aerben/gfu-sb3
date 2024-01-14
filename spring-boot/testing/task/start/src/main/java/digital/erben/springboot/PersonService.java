@@ -1,11 +1,11 @@
 package digital.erben.springboot;
 
-import org.springframework.stereotype.Service;
-
 import java.util.List;
+import org.springframework.stereotype.Service;
 
 @Service
 public class PersonService {
+
     private final PersonRepository personRepository;
 
     public PersonService(PersonRepository personRepository) {
@@ -15,6 +15,5 @@ public class PersonService {
     public List<Person> getAllPersons() {
         return personRepository.findAll();
     }
-
     // Weitere Methoden ...
 }

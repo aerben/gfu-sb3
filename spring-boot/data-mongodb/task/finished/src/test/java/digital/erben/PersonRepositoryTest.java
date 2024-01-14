@@ -1,6 +1,10 @@
 package digital.erben;
 
 import com.github.javafaker.Faker;
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.util.Date;
+import java.util.List;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,11 +12,6 @@ import org.springframework.boot.test.autoconfigure.data.mongo.DataMongoTest;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.test.context.ContextConfiguration;
 import org.testcontainers.junit.jupiter.Testcontainers;
-
-import java.time.LocalDate;
-import java.time.ZoneId;
-import java.util.Date;
-import java.util.List;
 
 @DataMongoTest
 @Testcontainers
@@ -45,9 +44,12 @@ public class PersonRepositoryTest {
 
     private Person randomPersonWithoutId() {
         Date birthday = faker.date().birthday(18, 80);
-        return new Person(null, faker.name().firstName(), faker.name().lastName(),
-            LocalDate.ofInstant(birthday.toInstant(),
-                ZoneId.systemDefault()), List.of(new PhoneNumber(null, 49, 2), new PhoneNumber(null, 49, 4)));
+        return new Person(
+            null,
+            faker.name().firstName(),
+            faker.name().lastName(),
+            LocalDate.ofInstant(birthday.toInstant(), ZoneId.systemDefault()),
+            List.of(new PhoneNumber(null, 49, 2), new PhoneNumber(null, 49, 4))
+        );
     }
-
 }

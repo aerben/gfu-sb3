@@ -7,5 +7,4 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EnableJpaRepositories("digital.erben.springboot")
 @EntityScan("digital.erben.springboot")
 @Configuration
-public class JpaConfiguration {
-}
+public class JpaConfiguration {}

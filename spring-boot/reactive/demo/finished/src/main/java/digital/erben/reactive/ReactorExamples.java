@@ -1,16 +1,20 @@
 package digital.erben.reactive;
 
+import java.util.List;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-
-import java.util.List;
 
 public class ReactorExamples {
 
     public static void main(String[] args) {
-
         // Beispiel 1: Erstellung eines Flux und Abo
-        Flux<String> fruitsFlux = Flux.just("Apfel", "Birne", "Banane", "Orange", "Traube");
+        Flux<String> fruitsFlux = Flux.just(
+            "Apfel",
+            "Birne",
+            "Banane",
+            "Orange",
+            "Traube"
+        );
         fruitsFlux.subscribe(System.out::println);
 
         // Beispiel 2: Erstellung eines Mono und Abo
@@ -32,13 +36,18 @@ public class ReactorExamples {
         flattenedFlux.subscribe(System.out::println);
 
         // Beispiel 5: Umgang mit Fehlern in Flux
-        Flux<String> errorFlux = Flux.concat(Flux.just("Normalwert"), Flux.error(new RuntimeException("Beispiel Fehler")));
-        errorFlux.onErrorResume(e -> Flux.just("Fehler aufgetreten, aber aufgefangen."))
+        Flux<String> errorFlux = Flux.concat(
+            Flux.just("Normalwert"),
+            Flux.error(new RuntimeException("Beispiel Fehler"))
+        );
+        errorFlux
+            .onErrorResume(e -> Flux.just("Fehler aufgetreten, aber aufgefangen."))
             .subscribe(System.out::println);
 
         // Beispiel 6: Umgang mit Fehlern in Mono
         Mono<String> errorMono = Mono.error(new RuntimeException("Beispiel Mono Fehler"));
-        errorMono.onErrorResume(e -> Mono.just("Fehler aufgetreten, aber aufgefangen (Mono)."))
+        errorMono
+            .onErrorResume(e -> Mono.just("Fehler aufgetreten, aber aufgefangen (Mono)."))
             .subscribe(System.out::println);
     }
 }

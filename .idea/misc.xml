@@ -43,6 +43,7 @@
         <option value="$PROJECT_DIR$/spring-boot/jta/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/data-redis/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/data-mongodb/task/start/pom.xml" />
+        <option value="$PROJECT_DIR$/java9/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

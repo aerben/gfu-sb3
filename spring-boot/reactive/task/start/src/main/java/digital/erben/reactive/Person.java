@@ -12,8 +12,10 @@ import org.springframework.data.annotation.Id;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Person {
+
     @Id
     private Long id;
+
     private String firstName;
     private String lastName;
 }

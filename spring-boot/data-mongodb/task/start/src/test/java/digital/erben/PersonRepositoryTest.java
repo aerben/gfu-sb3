@@ -1,6 +1,14 @@
 package digital.erben;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.is;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import com.github.javafaker.Faker;
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.util.Date;
+import java.util.Optional;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,15 +16,6 @@ import org.springframework.boot.test.autoconfigure.data.mongo.DataMongoTest;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.test.context.ContextConfiguration;
 import org.testcontainers.junit.jupiter.Testcontainers;
-
-import java.time.LocalDate;
-import java.time.ZoneId;
-import java.util.Date;
-import java.util.Optional;
-
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.is;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @DataMongoTest
 @Testcontainers
@@ -51,21 +50,31 @@ public class PersonRepositoryTest {
     }
 
     private Person randomPersonWithBirthday(LocalDate birthday) {
-        return new Person(null, faker.name().firstName(), faker.name().lastName(),
-            birthday);
+        return new Person(
+            null,
+            faker.name().firstName(),
+            faker.name().lastName(),
+            birthday
+        );
     }
 
     private Person randomPersonWithoutId() {
         Date birthday = faker.date().birthday(18, 80);
-        return new Person(null, faker.name().firstName(), faker.name().lastName(),
-            LocalDate.ofInstant(birthday.toInstant(),
-                ZoneId.systemDefault()));
+        return new Person(
+            null,
+            faker.name().firstName(),
+            faker.name().lastName(),
+            LocalDate.ofInstant(birthday.toInstant(), ZoneId.systemDefault())
+        );
     }
 
     private Person randomPersonWithId(String id) {
         Date birthday = faker.date().birthday(18, 80);
-        return new Person(id, faker.name().firstName(), faker.name().lastName(),
-            LocalDate.ofInstant(birthday.toInstant(),
-                ZoneId.systemDefault()));
+        return new Person(
+            id,
+            faker.name().firstName(),
+            faker.name().lastName(),
+            LocalDate.ofInstant(birthday.toInstant(), ZoneId.systemDefault())
+        );
     }
 }

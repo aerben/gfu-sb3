@@ -1,7 +1,6 @@
 package digital.erben.reactive;
 
 import com.github.javafaker.Faker;
-
 import java.util.Locale;
 
 public class PersonGenerator {
@@ -13,5 +12,4 @@ public class PersonGenerator {
         person.setLastName(faker.name().lastName());
         return person;
     }
-
 }

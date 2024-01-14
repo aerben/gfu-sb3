@@ -5,6 +5,4 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 
 @Configuration
 @EnableMongoRepositories
-public class DataConfiguration {
-
-}
+public class DataConfiguration {}

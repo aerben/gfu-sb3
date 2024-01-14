@@ -16,5 +16,4 @@ public class HelloController {
     public String index() {
         return helloService.sayHello();
     }
-
 }

@@ -1,12 +1,11 @@
 package digital.erben.springboot;
 
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
-
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 @RestController
 @RequestMapping("/files")
@@ -22,7 +21,9 @@ public class FileController {
     }
 
     @PostMapping("/upload")
-    public ResponseEntity<String> handleFileUpload(@RequestParam("file") MultipartFile file) throws IOException {
+    public ResponseEntity<String> handleFileUpload(
+        @RequestParam("file") MultipartFile file
+    ) throws IOException {
         System.out.println(new String(file.getBytes()));
         return ResponseEntity.ok("File uploaded successfully.");
     }

@@ -10,14 +10,16 @@ import org.testcontainers.utility.DockerImageName;
 
 @Configuration
 public class TestConfig {
+
     @Container
     public static MongoDBContainer mongoDBContainer = new MongoDBContainer("mongo:latest")
         .withExposedPorts(27017);
 
     @Container
-    public static GenericContainer<?> redisContainer =
-        new GenericContainer<>(DockerImageName.parse("redis:latest"))
-            .withExposedPorts(6379);
+    public static GenericContainer<?> redisContainer = new GenericContainer<>(
+        DockerImageName.parse("redis:latest")
+    )
+        .withExposedPorts(6379);
 
     static {
         mongoDBContainer.start();
@@ -25,7 +27,10 @@ public class TestConfig {
         System.setProperty("mongodb.container.port", String.valueOf(mappedPort));
         redisContainer.start();
         System.setProperty("spring.data.redis.host", redisContainer.getHost());
-        System.setProperty("spring.data.redis.port", redisContainer.getMappedPort(6379).toString());
+        System.setProperty(
+            "spring.data.redis.port",
+            redisContainer.getMappedPort(6379).toString()
+        );
     }
 
     @Bean

@@ -4,14 +4,14 @@ import jakarta.annotation.PostConstruct;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.time.LocalDateTime;
 import org.apache.catalina.Context;
 import org.apache.catalina.LifecycleException;
 import org.apache.catalina.startup.Tomcat;
 
-import java.io.IOException;
-import java.time.LocalDateTime;
-
 public class TomcatLauncher {
+
     @PostConstruct
     public void launch() throws LifecycleException {
         Tomcat tomcat = new Tomcat();
@@ -23,9 +23,12 @@ public class TomcatLauncher {
         tomcat.start();
         tomcat.getServer().await();
     }
+
     public static class CurrentDateServlet extends HttpServlet {
+
         @Override
-        protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+        protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+            throws IOException {
             resp.getWriter().write("Current date: " + LocalDateTime.now());
         }
     }

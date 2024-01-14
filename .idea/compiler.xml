@@ -12,6 +12,7 @@
         <module name="spring-boot-autoconfiguration-assignment-start" />
         <module name="gfu-sb3-testing-task-start" />
         <module name="gfu-spring-boot-starter-demo-autoconfigure-model" />
+        <module name="gfu-java21-streams-demo-finished" />
         <module name="spring-boot-autoconfiguration-finished" />
         <module name="spring-boot-starter-assignment-finished" />
         <module name="gfu-sb3-autoconfiguration-task-finished" />
@@ -26,6 +27,8 @@
         <module name="gfu-sb3-data-mongodb-task-finished" />
         <module name="gfu-sb3-autoconfiguration-demo-start" />
         <module name="gfu-sb3-starter-task-finished-app" />
+        <module name="gfu-test-dataset" />
+        <module name="gfu-java21-streams-task-start" />
         <module name="gfu-sb3-starter-task-finished-module" />
         <module name="gfu-spring-boot-starter-demo-app" />
         <module name="gfu-sb3-reactive-task-start" />
@@ -37,6 +40,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="gfu-sb3" target="21" />
       <module name="gfu-sb3-jta" target="21" />
       <module name="gfu-sb3-jta (1)" target="21" />
       <module name="gfu-sb3-jta-demo-finished" target="21" />

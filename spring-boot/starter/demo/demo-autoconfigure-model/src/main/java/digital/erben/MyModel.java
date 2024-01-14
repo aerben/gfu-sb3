@@ -1,6 +1,5 @@
 package digital.erben;
 
-
 import java.util.Objects;
 
 public class MyModel {
@@ -29,11 +28,18 @@ public class MyModel {
 
     @Override
     public String toString() {
-        return "MyModel{" +
-            "firstName='" + firstName + '\'' +
-            ", lastName='" + lastName + '\'' +
-            ", age=" + age +
-            '}';
+        return (
+            "MyModel{" +
+            "firstName='" +
+            firstName +
+            '\'' +
+            ", lastName='" +
+            lastName +
+            '\'' +
+            ", age=" +
+            age +
+            '}'
+        );
     }
 
     @Override
@@ -41,7 +47,11 @@ public class MyModel {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         MyModel myModel = (MyModel) o;
-        return Objects.equals(firstName, myModel.firstName) && Objects.equals(lastName, myModel.lastName) && Objects.equals(age, myModel.age);
+        return (
+            Objects.equals(firstName, myModel.firstName) &&
+            Objects.equals(lastName, myModel.lastName) &&
+            Objects.equals(age, myModel.age)
+        );
     }
 
     @Override

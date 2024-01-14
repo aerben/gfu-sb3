@@ -1,5 +1,10 @@
 package digital.erben.springboot;
 
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.mockito.ArgumentMatchers.anyString;
+import static org.mockito.ArgumentMatchers.eq;
+import static org.mockito.Mockito.*;
+
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,11 +12,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.ApplicationContext;
-
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.mockito.ArgumentMatchers.anyString;
-import static org.mockito.ArgumentMatchers.eq;
-import static org.mockito.Mockito.*;
 
 @SpringBootTest(classes = BasicSpringApplication.class)
 public class ApplicationContextTest {
@@ -43,7 +43,6 @@ public class ApplicationContextTest {
         when(mockMeBean.mockMe()).thenReturn("mocked");
         System.out.println(mockMeBean.mockMe());
     }
-
 
     @Test
     public void mockingDependencyTest() {
@@ -77,13 +76,15 @@ public class ApplicationContextTest {
 
         Mockito.reset(mockMeBean);
         verifyNoInteractions(mockMeBean);
-
     }
 
     @Test
     void mockAndTestExceptions() {
         when(mockMeBean.mockMeWithArguments(null))
             .thenThrow(new IllegalArgumentException());
-        assertThrows(IllegalArgumentException.class, () -> mockMeBean.mockMeWithArguments(null));
+        assertThrows(
+            IllegalArgumentException.class,
+            () -> mockMeBean.mockMeWithArguments(null)
+        );
     }
 }

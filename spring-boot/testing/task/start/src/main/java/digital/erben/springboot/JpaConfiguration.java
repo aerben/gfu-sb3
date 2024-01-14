@@ -5,5 +5,4 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @EnableJpaRepositories
 @Configuration
-public class JpaConfiguration {
-}
+public class JpaConfiguration {}
