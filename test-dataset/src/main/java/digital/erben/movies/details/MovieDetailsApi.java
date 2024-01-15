@@ -1,10 +1,14 @@
 package digital.erben.movies.details;
 
+import static com.fasterxml.jackson.annotation.JsonSetter.Value.forValueNulls;
+import static com.fasterxml.jackson.annotation.Nulls.AS_EMPTY;
+import static com.fasterxml.jackson.databind.DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES;
+import static java.net.http.HttpRequest.BodyPublishers.noBody;
+
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import digital.erben.movies.details.model.ApiResponse;
 import digital.erben.movies.details.model.MovieResult;
-
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -12,11 +16,6 @@ import java.net.http.HttpResponse;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
-
-import static com.fasterxml.jackson.annotation.JsonSetter.Value.forValueNulls;
-import static com.fasterxml.jackson.annotation.Nulls.AS_EMPTY;
-import static com.fasterxml.jackson.databind.DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES;
-import static java.net.http.HttpRequest.BodyPublishers.noBody;
 
 public class MovieDetailsApi {
 

@@ -4,5 +4,4 @@ public record MovieResult(
     PrimaryImage primaryImage,
     TitleText titleText,
     ReleaseDate releaseDate
-) {
-}
+) {}

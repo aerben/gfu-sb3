@@ -6,7 +6,7 @@ public class MovieDetailsApiTests {
 
     @Test
     public void shouldThrowIllegalArgumentExceptionWhenNullValueIsPassed() {
-       // Mocks.movieDetailsApiMock().loadDetailsForMovie(null); // implement further
+        // Mocks.movieDetailsApiMock().loadDetailsForMovie(null); // implement further
     }
 
     @Test
@@ -18,5 +18,4 @@ public class MovieDetailsApiTests {
     public void usingOppenheimerAsNameShouldTimeoutAfter3Seconds() {
         //Mocks.movieDetailsApiMock().loadDetailsForMovie("Oppenheimer").join();
     }
-    
 }
