@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="gfu-java21-completablefuture-task-start" />
         <module name="gfu-sb3-data-demo-finished" />
         <module name="spring-boot-testing-demo-finished" />
         <module name="spring-boot-autoconfiguration-assignment-start" />

@@ -24,6 +24,7 @@
 
     <modules>
         <module>demo/finished</module>
+        <module>task/start</module>
     </modules>
 
     <build>

@@ -16,7 +16,7 @@ public class AsciiTableRenderer {
             String releaseYear = releaseDate != null
                 ? String.valueOf(releaseDate.year())
                 : "UNKNOWN";
-            table.addRow(movie.originalTitleText().text(), releaseYear);
+            table.addRow(movie.titleText().text(), releaseYear);
         });
         System.out.println(table.render());
     }
