@@ -36,6 +36,7 @@
         <module name="gfu-spring-boot-starter-demo-app" />
         <module name="gfu-sb3-reactive-task-start" />
         <module name="gfu-sb3-reactive-demo-finished" />
+        <module name="gfu-java21-httpclient-task-finished" />
         <module name="gfu-java21-httpclient-demo-finished" />
         <module name="gfu-sb3-autoconfiguration-task-start" />
         <module name="gfu-sb3-data-demo-finished (1)" />
@@ -86,6 +87,8 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="gfu-java21-httpclient-task-finished" options="-parameters" />
+      <module name="gfu-java21-httpclient-task-start" options="-parameters" />
       <module name="gfu-sb3-data-demo-finished" options="-parameters" />
       <module name="gfu-sb3-data-demo-finished (1)" options="-parameters" />
       <module name="gfu-sb3-data-mongodb-task-finished" options="-parameters" />

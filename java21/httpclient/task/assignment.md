@@ -1,2 +1,2 @@
-# Aufgabe
-Implementiere alle Methoden in `MovieRatingsService`. Schreibe auch Tests um zu prüfen, ob deine Implementierungen funktionieren.
+# Aufgaben
+Implementiere die Klasse "HttpClient" anhand der Tests, die du im Projekt findest. Viel Spaß!

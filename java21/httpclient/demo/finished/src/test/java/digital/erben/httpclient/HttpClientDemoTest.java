@@ -1,22 +1,24 @@
 package digital.erben.httpclient;
 
 import com.github.javafaker.Faker;
-import org.jetbrains.annotations.NotNull;
-import org.junit.jupiter.api.Test;
-import org.testcontainers.containers.GenericContainer;
-import org.testcontainers.junit.jupiter.Container;
-import org.testcontainers.junit.jupiter.Testcontainers;
-import org.testcontainers.shaded.com.google.common.base.Charsets;
-
 import java.awt.*;
 import java.io.IOException;
+import java.net.CookieManager;
+import java.net.HttpCookie;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
+import org.jetbrains.annotations.NotNull;
+import org.junit.jupiter.api.Test;
+import org.testcontainers.containers.GenericContainer;
+import org.testcontainers.junit.jupiter.Container;
+import org.testcontainers.junit.jupiter.Testcontainers;
+import org.testcontainers.shaded.com.google.common.base.Charsets;
 
 @Testcontainers
 public class HttpClientDemoTest {
@@ -109,6 +111,37 @@ public class HttpClientDemoTest {
                 // Würden wir nicht join() aufrufen, würde der Test an dieser Stelle beendet werden, bevor die Antwort
                 // vom Server kommt.
                 .join();
+        }
+    }
+
+    @Test
+    void withCookie() throws IOException, InterruptedException {
+        // Die Http Cookie API in Java existiert seit 1.6
+        HttpCookie sessionCookie = new HttpCookie(
+            "session",
+            "53616c7465645f5f9d467d3ae831ec1b1e7289ef45d256224786e1ed13"
+        );
+        sessionCookie.setPath("/");
+        CookieManager manager = new CookieManager();
+        manager.getCookieStore().add(URI.create(baseurl()), sessionCookie);
+
+        // Hier setzen wir mal einen Connect-Timeout. Auch das ist zu empfehlen.
+        try (
+            HttpClient httpClient = HttpClient
+                .newBuilder()
+                .connectTimeout(Duration.ofSeconds(10))
+                // hier setzen wir den CookieManager/CookieHandler
+                .cookieHandler(manager)
+                .build()
+        ) {
+            HttpResponse<String> response = httpClient.send(
+                HttpRequest
+                    .newBuilder(URI.create(baseurl() + "/get?myparam=myvalue"))
+                    .GET()
+                    .build(),
+                HttpResponse.BodyHandlers.ofString(Charsets.UTF_8)
+            );
+            System.out.println(response.body());
         }
     }
 

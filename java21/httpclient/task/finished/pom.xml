@@ -11,7 +11,7 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>gfu-java21-httpclient-task-start</artifactId>
+    <artifactId>gfu-java21-httpclient-task-finished</artifactId>
     <packaging>jar</packaging>
 
     <properties>
@@ -80,9 +80,6 @@
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.2.1</version>
-                <configuration>
-                    <testFailureIgnore>true</testFailureIgnore>
-                </configuration>
             </plugin>
         </plugins>
     </build>
