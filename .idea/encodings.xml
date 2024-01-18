@@ -15,6 +15,12 @@
     <file url="file://$PROJECT_DIR$/java21/httpclient/task/finished/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java21/httpclient/task/start/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java21/httpclient/task/start/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java21/records/demo/finished/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java21/records/demo/finished/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java21/records/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java21/records/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java21/records/task/start/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java21/records/task/start/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java21/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java21/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java21/streams/demo/finished/src/main/java" charset="UTF-8" />
@@ -23,8 +29,10 @@
     <file url="file://$PROJECT_DIR$/java21/streams/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java21/streams/task/start/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java21/streams/task/start/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-boot/autoconfiguration/demo/demo-finished-host/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-boot/autoconfiguration/demo/demo-finished-host/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java21/various/demo/finished/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java21/various/demo/finished/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java21/various/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java21/various/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot/autoconfiguration/demo/finished/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot/autoconfiguration/demo/finished/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot/autoconfiguration/demo/start/src/main/java" charset="UTF-8" />
@@ -47,10 +55,6 @@
     <file url="file://$PROJECT_DIR$/spring-boot/data-redis/demo/finished/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot/data-redis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot/data-redis/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-boot/jta/demo/finished/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-boot/jta/demo/finished/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-boot/jta/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-boot/jta/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot/reactive/demo/finished/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot/reactive/demo/finished/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot/reactive/src/main/java" charset="UTF-8" />
@@ -65,12 +69,6 @@
     <file url="file://$PROJECT_DIR$/spring-boot/starter/demo/demo-autoconfigure-model/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot/starter/demo/demo-autoconfigure-starter/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot/starter/demo/demo-autoconfigure-starter/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-boot/starter/demo/demo-finished-hostapp/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-boot/starter/demo/demo-finished-hostapp/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-boot/starter/demo/demo-finished-startermodule/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-boot/starter/demo/demo-finished-startermodule/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-boot/starter/demo/demo-start/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-boot/starter/demo/demo-start/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot/starter/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot/starter/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot/starter/task/finished-app/src/main/java" charset="UTF-8" />

@@ -1,63 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$" />
-    <file type="web" url="file://$PROJECT_DIR$/spring-boot/autoconfiguration/demo/finished/autoconfiguration" />
-  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/spring-boot/demo/finished/autoconfiguration/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/demo/autoconfiguration/finished/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/demo/autoconfiguration/assignment/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/demo/autoconfiguration/assignment-finished/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/demo/autoconfiguration/assignment-start/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/demo/demo-start/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/demo/demo-finished/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/assignment/assignment-start/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/assignment/assignment-finished/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/autoconfiguration/assignment/assignment-finished/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/autoconfiguration/assignment/assignment-start/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/autoconfiguration/demo/demo-finished/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/testing/demo/demo-finished/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/autoconfiguration/demo/demo-start/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/autoconfiguration/demo/demo-finished-host/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/autoconfiguration/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/testing/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/starter/demo/demo-finished-hostapp/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/starter/demo/greeter-spring-boot-autoconfigure/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/starter/demo/demo-autoconfigure/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/starter/demo/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/starter/demo/greeter-spring-boot-sample-app/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/starter/demo/demo-autoconfigure-model/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/starter/demo/demo-autoconfigure-starter/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/testing/demo/demo-start/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/testing/assignment/assignment-start/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/starter/assignment/assignment-start/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/starter/assignment/assignment-finished-app/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/reactive/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/reactive/assignment/assignment-start/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/jta/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/data-redis/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/data-mongodb/task/start/pom.xml" />
-        <option value="$PROJECT_DIR$/java9/pom.xml" />
       </list>
-    </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/spring-boot/autoconfiguration/demo/demo-finished-host/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/jta/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/starter/demo/demo-finished-hostapp/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/starter/demo/demo-finished-startermodule/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/starter/demo/demo-start/pom.xml" />
-      </set>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="temurin-21" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/out" />
-  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="temurin-21" project-jdk-type="JavaSDK" />
 </project>

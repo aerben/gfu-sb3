@@ -6,13 +6,13 @@
 
     <parent>
         <groupId>digital.erben</groupId>
-        <artifactId>gfu-parent</artifactId>
+        <artifactId>gfu-java21-various</artifactId>
         <version>1.0.0-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
+        <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>gfu-java21</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>gfu-java21-various-demo-finished</artifactId>
+    <packaging>jar</packaging>
 
     <properties>
         <spring-boot.version>3.2.1</spring-boot.version>
@@ -21,13 +21,16 @@
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
     </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
     <modules>
-        <module>streams</module>
-        <module>completablefuture</module>
-        <module>httpclient</module>
-        <module>records</module>
-        <module>various</module>
     </modules>
 
     <build>
@@ -37,6 +40,9 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>${maven-compiler-plugin.version}</version>
+                    <configuration>
+                        <release>21</release>
+                    </configuration>
                 </plugin>
             </plugins>
         </pluginManagement>

@@ -8,93 +8,46 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="gfu-java21-completablefuture-task-start" />
-        <module name="gfu-sb3-data-demo-finished" />
-        <module name="spring-boot-testing-demo-finished" />
-        <module name="spring-boot-autoconfiguration-assignment-start" />
+        <module name="gfu-sb3-data-redis-demo-finished" />
+        <module name="gfu-sb3-starter-demo-autoconfigure-starter" />
         <module name="gfu-sb3-testing-task-start" />
-        <module name="gfu-spring-boot-starter-demo-autoconfigure-model" />
         <module name="gfu-java21-streams-demo-finished" />
-        <module name="spring-boot-autoconfiguration-finished" />
-        <module name="spring-boot-starter-assignment-finished" />
+        <module name="gfu-java21-records-demo-finished" />
         <module name="gfu-sb3-autoconfiguration-task-finished" />
-        <module name="gfu-sb3-autoconfiguration-demo-finished" />
         <module name="gfu-java21-completablefuture-demo-finished" />
-        <module name="gfu-spring-boot-starter-demo-autoconfigure-starter" />
+        <module name="gfu-sb3-autoconfiguration-demo-finished" />
         <module name="gfu-java21-httpclient-task-start" />
-        <module name="gfu-spring-boot-starter-demo-autoconfigure-starter (1)" />
+        <module name="gfu-sb3-starter-demo-app" />
         <module name="gfu-sb3-testing-task-finished" />
+        <module name="gfu-java21-records-task-start" />
         <module name="gfu-sb3-testing-demo-finished" />
-        <module name="spring-boot-autoconfiguration-assignment-finished" />
-        <module name="spring-boot-autoconfiguration-start" />
-        <module name="gfu-sb3-testing-demo-start" />
+        <module name="gfu-sb3-data-mongodb-demo-finished" />
         <module name="gfu-sb3-data-mongodb-task-finished" />
+        <module name="gfu-sb3-testing-demo-start" />
         <module name="gfu-sb3-autoconfiguration-demo-start" />
         <module name="gfu-sb3-starter-task-finished-app" />
         <module name="gfu-test-dataset" />
         <module name="gfu-java21-streams-task-start" />
         <module name="gfu-sb3-starter-task-finished-module" />
-        <module name="gfu-spring-boot-starter-demo-app" />
+        <module name="gfu-java21-various-demo-finished" />
         <module name="gfu-sb3-reactive-task-start" />
         <module name="gfu-sb3-reactive-demo-finished" />
         <module name="gfu-java21-httpclient-task-finished" />
         <module name="gfu-java21-httpclient-demo-finished" />
         <module name="gfu-sb3-autoconfiguration-task-start" />
-        <module name="gfu-sb3-data-demo-finished (1)" />
         <module name="gfu-sb3-data-mongodb-task-start" />
-        <module name="spring-boot-starter-assignment-start" />
+        <module name="gfu-sb3-starter-demo-autoconfigure-model" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="gfu-sb3" target="21" />
-      <module name="gfu-sb3-jta" target="21" />
-      <module name="gfu-sb3-jta (1)" target="21" />
-      <module name="gfu-sb3-jta-demo-finished" target="21" />
-      <module name="gfu-sb3-jta-demo-finished (1)" target="21" />
-      <module name="gfu-spring-boot-autoconfiguration-assignment-finished" target="21" />
-      <module name="gfu-spring-boot-autoconfiguration-assignment-start" target="21" />
-      <module name="gfu-spring-boot-autoconfiguration-demo-finished" target="21" />
-      <module name="gfu-spring-boot-autoconfiguration-demo-start" target="21" />
-      <module name="gfu-spring-boot-reactive-demo-finished" target="21" />
-      <module name="gfu-spring-boot-reactive-demo-finished (1)" target="21" />
-      <module name="gfu-spring-boot-starter-assignment-finished" target="21" />
-      <module name="gfu-spring-boot-starter-assignment-finished-app" target="21" />
-      <module name="gfu-spring-boot-starter-assignment-finished-module" target="21" />
-      <module name="gfu-spring-boot-starter-assignment-start" target="1.8" />
-      <module name="gfu-spring-boot-starter-demo-finished" target="21" />
-      <module name="gfu-spring-boot-starter-demo-finished-startermodule" target="21" />
-      <module name="gfu-spring-boot-testing-assignment-finished" target="21" />
-      <module name="gfu-spring-boot-testing-assignment-finished (1)" target="21" />
-      <module name="gfu-spring-boot-testing-assignment-start" target="21" />
-      <module name="gfu-spring-boot-testing-demo-finished" target="21" />
-      <module name="gfu-spring-boot-testing-demo-finished (1)" target="21" />
-      <module name="gfu-spring-boot-testing-demo-start" target="21" />
-      <module name="gfu-spring-boot-testing-demo-start (1)" target="21" />
-      <module name="greeter-spring-boot-autoconfigure" target="1.5" />
-      <module name="greeter-spring-boot-sample-app" target="1.5" />
-      <module name="spring-boot-autoconfiguration-assignment-finished" target="21" />
-      <module name="spring-boot-autoconfiguration-assignment-finished (1)" target="21" />
-      <module name="spring-boot-autoconfiguration-assignment-start" target="21" />
-      <module name="spring-boot-autoconfiguration-finished" target="21" />
-      <module name="spring-boot-autoconfiguration-finished (1)" target="21" />
-      <module name="spring-boot-autoconfiguration-finished (2)" target="21" />
-      <module name="spring-boot-autoconfiguration-finished.main" target="21" />
-      <module name="spring-boot-autoconfiguration-finished.test" target="21" />
-      <module name="spring-boot-autoconfiguration-host" target="21" />
-      <module name="spring-boot-autoconfiguration-start" target="21" />
-      <module name="spring-boot-custom-starter" target="1.5" />
-      <module name="spring-boot-testing-finished" target="17" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="gfu-java21-httpclient-task-finished" options="-parameters" />
       <module name="gfu-java21-httpclient-task-start" options="-parameters" />
-      <module name="gfu-sb3-data-demo-finished" options="-parameters" />
-      <module name="gfu-sb3-data-demo-finished (1)" options="-parameters" />
+      <module name="gfu-sb3-data-mongodb-demo-finished" options="-parameters" />
       <module name="gfu-sb3-data-mongodb-task-finished" options="-parameters" />
       <module name="gfu-sb3-data-mongodb-task-start" options="-parameters" />
-      <module name="spring-boot-autoconfiguration-finished (2)" options="" />
-      <module name="spring-boot-testing-finished" options="" />
+      <module name="gfu-sb3-data-redis-demo-finished" options="-parameters" />
     </option>
   </component>
 </project>
