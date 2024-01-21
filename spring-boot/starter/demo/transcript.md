@@ -6,7 +6,7 @@ Setup:
 
 ## 1 Tomcat embedded
 
-Erzeuge eine leere Main-Klasse mit Main-Methode. Füge die folgende Dependency zur POM hinzu:
+Erzeuge eine leere digital.erben.various.Main-Klasse mit digital.erben.various.Main-Methode. Füge die folgende Dependency zur POM hinzu:
 
 ```xml
 <dependency>

@@ -46,7 +46,7 @@ public void basicTest() {
 }
 ```
 
-Erkläre, dass `SpringBootTest` automatisch einen Component Scan auf dem aktuellen Package und allen darunter stehenden macht - sowohl im Test- als auch im Main-Ordner. Wir können die Klasse aber auch explizit angeben:
+Erkläre, dass `SpringBootTest` automatisch einen Component Scan auf dem aktuellen Package und allen darunter stehenden macht - sowohl im Test- als auch im digital.erben.various.Main-Ordner. Wir können die Klasse aber auch explizit angeben:
 
 ```java
 @SpringBootTest(classes = BasicSpringApplication.class)

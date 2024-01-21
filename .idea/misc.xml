@@ -5,7 +5,20 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/java21/tasks/pom.xml" />
+        <option value="$PROJECT_DIR$/java21/tasks/streams/pom.xml" />
+        <option value="$PROJECT_DIR$/java21/various/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/java21/completablefuture/demo/finished/pom.xml" />
+        <option value="$PROJECT_DIR$/java21/streams/demo/finished/pom.xml" />
+        <option value="$PROJECT_DIR$/java21/streams/task/start/pom.xml" />
+        <option value="$PROJECT_DIR$/java21/tasks/httpclient/finished/pom.xml" />
+        <option value="$PROJECT_DIR$/java21/various/demo/finished/pom.xml" />
+        <option value="$PROJECT_DIR$/test-dataset/pom.xml" />
+      </set>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />
   </component>

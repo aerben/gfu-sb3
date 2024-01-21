@@ -4,15 +4,10 @@
                              http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>digital.erben</groupId>
-        <artifactId>gfu-java21</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
-    </parent>
-
+    <groupId>digital.erben</groupId>
     <artifactId>gfu-java21-streams</artifactId>
-    <packaging>pom</packaging>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <properties>
         <spring-boot.version>3.2.1</spring-boot.version>
@@ -22,10 +17,31 @@
         <maven.compiler.target>21</maven.compiler.target>
     </properties>
 
-    <modules>
-        <module>demo/finished</module>
-        <module>task/start</module>
-    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.junit</groupId>
+                <artifactId>junit-bom</artifactId>
+                <version>5.10.1</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>digital.erben</groupId>
+            <artifactId>gfu-test-dataset</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <pluginManagement>
@@ -37,5 +53,11 @@
                 </plugin>
             </plugins>
         </pluginManagement>
+        <plugins>
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.1</version>
+            </plugin>
+        </plugins>
     </build>
 </project>

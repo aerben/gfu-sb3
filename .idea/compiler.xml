@@ -7,41 +7,57 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="gfu-java21-completablefuture-task-start" />
+        <module name="gfu-java21-streams" />
         <module name="gfu-sb3-data-redis-demo-finished" />
         <module name="gfu-sb3-starter-demo-autoconfigure-starter" />
+        <module name="gfu-java21-completablefuture" />
         <module name="gfu-sb3-testing-task-start" />
-        <module name="gfu-java21-streams-demo-finished" />
-        <module name="gfu-java21-records-demo-finished" />
         <module name="gfu-sb3-autoconfiguration-task-finished" />
-        <module name="gfu-java21-completablefuture-demo-finished" />
         <module name="gfu-sb3-autoconfiguration-demo-finished" />
-        <module name="gfu-java21-httpclient-task-start" />
         <module name="gfu-sb3-starter-demo-app" />
         <module name="gfu-sb3-testing-task-finished" />
-        <module name="gfu-java21-records-task-start" />
         <module name="gfu-sb3-testing-demo-finished" />
         <module name="gfu-sb3-data-mongodb-demo-finished" />
         <module name="gfu-sb3-data-mongodb-task-finished" />
         <module name="gfu-sb3-testing-demo-start" />
         <module name="gfu-sb3-autoconfiguration-demo-start" />
         <module name="gfu-sb3-starter-task-finished-app" />
-        <module name="gfu-test-dataset" />
-        <module name="gfu-java21-streams-task-start" />
+        <module name="gfu-java21-httpclient" />
+        <module name="gfu-java21-records" />
         <module name="gfu-sb3-starter-task-finished-module" />
-        <module name="gfu-java21-various-demo-finished" />
         <module name="gfu-sb3-reactive-task-start" />
         <module name="gfu-sb3-reactive-demo-finished" />
-        <module name="gfu-java21-httpclient-task-finished" />
-        <module name="gfu-java21-httpclient-demo-finished" />
+        <module name="gfu-java21-various" />
         <module name="gfu-sb3-autoconfiguration-task-start" />
         <module name="gfu-sb3-data-mongodb-task-start" />
         <module name="gfu-sb3-starter-demo-autoconfigure-model" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="gfu-java21-completablefuture-demo-finished" target="21" />
+      <module name="gfu-java21-completablefuture-task" target="21" />
+      <module name="gfu-java21-completablefuture-task-start" target="21" />
+      <module name="gfu-java21-httpclient-demo-finished" target="21" />
+      <module name="gfu-java21-httpclient-task-finished" target="21" />
+      <module name="gfu-java21-httpclient-task-start" target="21" />
+      <module name="gfu-java21-records (1)" target="21" />
+      <module name="gfu-java21-records (2)" target="21" />
+      <module name="gfu-java21-records-demo-finished" target="21" />
+      <module name="gfu-java21-records-task-start" target="21" />
+      <module name="gfu-java21-streams-demo-finished" target="21" />
+      <module name="gfu-java21-streams-task-start" target="21" />
+      <module name="gfu-java21-streams-task-start (1)" target="21" />
+      <module name="gfu-java21-tasks-aggregator" target="1.5" />
+      <module name="gfu-java21-various-demo-finished" target="21" />
+      <module name="gfu-test-dataset" target="21" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="gfu-java21-completablefuture" options="-parameters" />
+      <module name="gfu-java21-completablefuture-task" options="-parameters" />
+      <module name="gfu-java21-completablefuture-task-start" options="-parameters" />
+      <module name="gfu-java21-httpclient" options="-parameters" />
       <module name="gfu-java21-httpclient-task-finished" options="-parameters" />
       <module name="gfu-java21-httpclient-task-start" options="-parameters" />
       <module name="gfu-sb3-data-mongodb-demo-finished" options="-parameters" />

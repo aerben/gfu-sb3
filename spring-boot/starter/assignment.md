@@ -205,7 +205,7 @@ Erstelle eine Datei namens `application.properties` im Verzeichnis `src/main/res
 custom.service.message=Hallo, hier ist der Custom Starter!
 ```
 
-## Schritt 9: Main-Klasse erstellen
+## Schritt 9: digital.erben.various.Main-Klasse erstellen
 
 Erstelle eine neue Java-Klasse `CustomStarterDemoApplication.java` im Verzeichnis `src/main/java/com/example/demo`:
 

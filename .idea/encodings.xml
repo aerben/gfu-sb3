@@ -5,22 +5,18 @@
     <file url="file://$PROJECT_DIR$/java21/completablefuture/demo/finished/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java21/completablefuture/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java21/completablefuture/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/java21/completablefuture/task/start/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/java21/completablefuture/task/start/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java21/httpclient/demo/finished/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java21/httpclient/demo/finished/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java21/httpclient/finished/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java21/httpclient/finished/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java21/httpclient/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java21/httpclient/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/java21/httpclient/task/finished/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/java21/httpclient/task/finished/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/java21/httpclient/task/start/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/java21/httpclient/task/start/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java21/httpclient/start/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java21/httpclient/start/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java21/records/demo/finished/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java21/records/demo/finished/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java21/records/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java21/records/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/java21/records/task/start/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/java21/records/task/start/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java21/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java21/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java21/streams/demo/finished/src/main/java" charset="UTF-8" />
@@ -29,6 +25,8 @@
     <file url="file://$PROJECT_DIR$/java21/streams/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java21/streams/task/start/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java21/streams/task/start/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java21/tasks/records/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java21/tasks/records/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java21/various/demo/finished/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java21/various/demo/finished/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java21/various/src/main/java" charset="UTF-8" />
