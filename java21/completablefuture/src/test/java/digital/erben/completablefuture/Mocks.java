@@ -4,11 +4,6 @@ import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
-import digital.erben.completablefuture.MovieDetailsApi;
-import digital.erben.completablefuture.MovieResult;
-import digital.erben.completablefuture.PrimaryImage;
-import digital.erben.completablefuture.ReleaseDate;
-import digital.erben.completablefuture.TitleText;
 import org.mockito.Mockito;
 
 public class Mocks {

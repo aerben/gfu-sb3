@@ -1,6 +1,5 @@
 package digital.erben.movies;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import java.net.CookieManager;
 import java.net.HttpCookie;
 import java.net.URI;
@@ -14,8 +13,6 @@ public class CartService {
 
     private final String host;
     private final int port;
-
-    private final ObjectMapper objectMapper = new ObjectMapper();
 
     public CartService(String host, int port) {
         this.host = host;

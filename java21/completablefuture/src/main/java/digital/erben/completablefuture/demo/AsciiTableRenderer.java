@@ -4,7 +4,6 @@ import de.vandermeer.asciitable.AsciiTable;
 import de.vandermeer.asciitable.CWC_LongestLine;
 import digital.erben.completablefuture.MovieResult;
 import digital.erben.completablefuture.ReleaseDate;
-
 import java.util.List;
 
 public class AsciiTableRenderer {

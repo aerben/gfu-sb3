@@ -146,7 +146,6 @@ public class StreamsExample {
     private static void filterBeispiel() {
         // Beispiel Filtern
         List<Person> ueber30 = PERSONEN.stream().filter(p -> p.alter() > 30).toList();
-
         System.out.println("ueber30: " + ueber30);
     }
 }

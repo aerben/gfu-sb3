@@ -1,13 +1,12 @@
 package digital.erben.completablefuture.demo;
 
+import digital.erben.completablefuture.MovieDetailsApi;
+import digital.erben.completablefuture.MovieResult;
 import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ForkJoinPool;
-import digital.erben.completablefuture.MovieDetailsApi;
-import digital.erben.completablefuture.MovieResult;
-
 
 /**
  * Beispiele für die Verwendung von CompletableFuture in Java.
@@ -18,25 +17,27 @@ public final class CompletableFutureExample {
     private static final MovieDetailsApi API = MovieDetailsApi.instance();
 
     public static void main(String[] args) {
-
         // Erstmal ein einfaches Beispiel zum Warmwerden
-        CompletableFuture.supplyAsync(() -> {
-            // Some long-running operation
-            return "done";
-        }).thenAccept(System.out::println);
+        CompletableFuture
+            .supplyAsync(() -> {
+                // Some long-running operation
+                return "done";
+            })
+            .thenAccept(System.out::println);
         // da wir nicht join oder get aufrufen, wird diese Operation
         // im Hintergrund laufen. Wird das Programm beendet bevor die Operation abgeschlossen ist, dann... pech!
 
-        CompletableFuture.runAsync(() -> {
-            // Dies ist ein Runnable. Es gibt nichts zurück, und das CompletableFuture ist daher ein CompletableFuture<Void>
-        }).join(); // mit join erwarten wir das Ergebnis
-
+        CompletableFuture
+            .runAsync(() -> {
+                // Dies ist ein Runnable. Es gibt nichts zurück, und das CompletableFuture ist daher ein CompletableFuture<Void>
+            })
+            .join(); // mit join erwarten wir das Ergebnis
 
         CompletableFuture.completedFuture("schon fertig"); //Falls wir eines brauchen, aber das Ergebnis schon da ist
-        CompletableFuture.failedFuture(
-            new RuntimeException((""))); // Falls wir schon wissen, dass es fehlgeschlagen ist
+        CompletableFuture.failedFuture(new RuntimeException((""))); // Falls wir schon wissen, dass es fehlgeschlagen ist
 
-        CompletableFuture.supplyAsync(() -> "test")
+        CompletableFuture
+            .supplyAsync(() -> "test")
             .thenApply(String::toUpperCase)
             .thenApplyAsync(String::toUpperCase)
             .thenApplyAsync(String::toUpperCase, ForkJoinPool.commonPool())
@@ -50,33 +51,38 @@ public final class CompletableFutureExample {
         // i.d.R. ForkJoinPool.commonPool
         // man kann den Pool auch explizit definieren
 
-
         // exceptionally dient dazu, einen Fehler zu fangen und "weiterzumachen"
-        CompletableFuture.failedFuture(new RuntimeException("foo")).exceptionally(error -> {
-            System.err.println(error.getMessage());
-            return "ok";
-        });
+        CompletableFuture
+            .failedFuture(new RuntimeException("foo"))
+            .exceptionally(error -> {
+                System.err.println(error.getMessage());
+                return "ok";
+            });
 
         // whenComplete erhält entweder den Wert der letzten Stage, oder den Fehler.
         // es ändert den Wert oder Fehler aber nicht und fungiert daher wie ein T-Stück
-        CompletableFuture.completedFuture("").whenComplete((val, err) -> {
-            if (val != null) {
-                System.out.println(val);
-            } else if (err != null) {
-                System.err.println(err.getMessage());
-            }
-        });
+        CompletableFuture
+            .completedFuture("")
+            .whenComplete((val, err) -> {
+                if (val != null) {
+                    System.out.println(val);
+                } else if (err != null) {
+                    System.err.println(err.getMessage());
+                }
+            });
 
         // Handle wird ausgeführt sowohl im Erfolgs- und im Fehlerfall.
         // Es wird erwartet, dass der Fehler behandelt wird, wenn er auftritt.
-        CompletableFuture.completedFuture("").handle((val, err) -> {
-            if (val != null) {
-                System.out.println(val);
-            } else if (err != null) {
-                System.err.println(err.getMessage());
-            }
-            return "";
-        });
+        CompletableFuture
+            .completedFuture("")
+            .handle((val, err) -> {
+                if (val != null) {
+                    System.out.println(val);
+                } else if (err != null) {
+                    System.err.println(err.getMessage());
+                }
+                return "";
+            });
 
         // Hier werden zwei Einträge aus dem Dataset geladen, der Name entnommen,
         // und schließlich die MoviesApi aufgerufen.

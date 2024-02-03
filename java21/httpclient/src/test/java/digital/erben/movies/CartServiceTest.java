@@ -25,7 +25,6 @@ class CartServiceTest {
 
     private final ObjectMapper objectMapper = new ObjectMapper();
     private MockServerClient client;
-    private final Faker faker = Faker.instance();
 
     @BeforeEach
     public void beforeEach(MockServerClient client) {
