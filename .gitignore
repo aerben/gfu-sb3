@@ -1,3 +1,5 @@
+.DS_Store
+.idea
 ### Maven template
 target/
 pom.xml.tag
