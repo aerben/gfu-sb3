@@ -1,11 +1,15 @@
 # Autoconfiguration transcript
 
-Setup: 
-- Clone [](https://github.com/spring-projects/spring-boot.git)
-- Erstelle ein leeres Maven-Projekt.
+Erkläre, was das Ziel ist: Eine Anwendung bauen, die
+einen Tomcat embedded und eine H2-DB enthält.
+Wir wollen auf dem Weg erklären, wie Spring Boot
+anhand von Conditions erkennt, was zu starten ist.
 
+Setup: 
+Starte im Projekt "gfu-sb3-autoconfiguration-demo-start"
 ## 1 Tomcat embedded
 
+Wir steigen damit ein, dass wir uns einen Tomcat "as code" zusammenschrauben.
 Erzeuge eine leere digital.erben.various.Main-Klasse mit digital.erben.various.Main-Methode. Füge die folgende Dependency zur POM hinzu:
 
 ```xml
@@ -29,6 +33,7 @@ public class SampleApplication {
     }
 }
 ```
+Dieses Beispiel ist noch nicht startfähig!!!
 Binde nun einen Context und ein Servlet ein. Erwähne das DispatcherServlet von Spring.
 
 ```java
@@ -53,6 +58,8 @@ public class SampleApplication {
     }
 }
 ```
+Der Server kann jetzt starten und gibt immer ein Date zurück
+
 ## 2 Spring Context
 Als nächstes "springifizieren" wir das Projekt. Erwähne, dass in Legacy-Projekten nicht mehr zu sehen ist, was man für Barebones-Spring eigentlich braucht. Es reicht spring-context
 
@@ -190,7 +197,7 @@ public class DefaultConfig {
 }
 ```
 Stelle die Tomcat-Dependency auf den Provided-Scope, importiere neu und starte die Anwendung. Zeige, dass Tomcat nicht mehr startet. Erläutere, dass dies genau die Logik hinter Spring Boot ist. Wir gehen nun erst mal auf Properties ein.
-
+Denke daran, dass die Main-Klasse keinen Tomcat-Import mehr haben darf.
 ## Properties
 
 Erläutere, dass Properties an verschiedenen Stellen definiert werden können. Klassiker: `application.properties`. Ein Überblick findet sich in der [Referenz-Dokumentation](https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.external-config)
@@ -256,6 +263,7 @@ public static void main(String[] args)  {
     }
 }
 ```
+Entferne das await in der Tomcat-Config und denke daran, die DataSource-Config zu importieren.
 
 Starte und zeige, dass es funktioniert hat.
 
